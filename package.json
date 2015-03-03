@@ -1,0 +1,29 @@
+{
+  "name": "babel-test",
+  "version": "1.0.0",
+  "description": "babel testing oh yeah",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micahasmith/babel-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/micahasmith/babel-test/issues"
+  },
+  "homepage": "https://github.com/micahasmith/babel-test",
+  "devDependencies": {
+    "babel": "^4.6.6",
+    "chai": "^2.1.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-babel-preprocessor": "^4.0.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5",
+    "mocha": "^2.1.0"
+  }
+}
