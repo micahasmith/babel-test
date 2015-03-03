@@ -1,7 +1,0 @@
-
-
-describe('testing',()=>{
-	it('boots',()=>{
-		
-	})
-});

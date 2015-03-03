@@ -18,12 +18,20 @@
   "homepage": "https://github.com/micahasmith/babel-test",
   "devDependencies": {
     "babel": "^4.6.6",
-    "chai": "^2.1.0",
+    "es6-module-loader": "^0.11.2",
     "jasmine-core": "^2.2.0",
+    "jspm": "^0.14.0",
     "karma": "^0.12.31",
-    "karma-babel-preprocessor": "^4.0.0",
     "karma-chrome-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.5",
-    "mocha": "^2.1.0"
+    "karma-jspm": "^1.1.4",
+    "systemjs": "^0.11.3",
+    "traceur": "0.0.85"
+  },
+  "jspm": {
+    "directories": {
+      "lib": ".",
+      "packages": "jspm_packages"
+    }
   }
 }

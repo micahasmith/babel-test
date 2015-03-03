@@ -10,35 +10,19 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine','jspm'],
+
+
+    //plugins
+    plugins: ['karma-jspm','karma-jasmine','karma-chrome-launcher'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'src/**/*.es6',
-      'test/**/*.js'
+      // 'src/**/*.js',
+      // 'test/**/*.js'
     ],
 
-
-    preprocessors: {
-      'src/**/*.es6': ['babel'],
-      'test/**/*.js': ['babel']
-    },
-
-
-    'babelPreprocessor': {
-
-      options: {
-        modules:"common",
-        sourceMap: 'inline'
-      },
-      filename: function(file) {
-        return file.originalPath.replace(/\.js$/, '.es5.js');
-      },
-      sourceFileName: function(file) {
-        return file.originalPath;
-      }
-    },
 
 
     // list of files to exclude
@@ -76,6 +60,12 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: false,
+
+    jspm:{
+         loadFiles: ['test/**/*.js'],
+        serveFiles: ['src/**/*.js']
+    }
+
   });
 };
