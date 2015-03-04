@@ -64,7 +64,7 @@ module.exports = function(config) {
 
     jspm:{
          loadFiles: ['test/**/*.js'],
-        serveFiles: ['src/**/*.js']
+         serveFiles: ['src/**/*.js','test/fakes/**/*.js']
     }
 
   });

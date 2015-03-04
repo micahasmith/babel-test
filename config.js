@@ -8,7 +8,7 @@ System.config({
     "build": [
       "src/double",
       "src/triple",
-      "src/index",
+      "src/index"
     ]
   }
 });
